@@ -13,17 +13,15 @@ public class AddTrainEntryDto {
 
     private int noOfSeats;
 
-    public List<Station> getStationRoute() {
-        return stationRoute;
+    public AddTrainEntryDto() {
+
     }
+
 
     public AddTrainEntryDto(List<Station> stationRoute, LocalTime departureTime, int noOfSeats) {
         this.stationRoute = stationRoute;
         this.departureTime = departureTime;
         this.noOfSeats = noOfSeats;
-    }
-
-    public AddTrainEntryDto() {
     }
 
     public void setStationRoute(List<Station> stationRoute) {
@@ -45,4 +43,10 @@ public class AddTrainEntryDto {
     public void setNoOfSeats(int noOfSeats) {
         this.noOfSeats = noOfSeats;
     }
+
+
+    public List<Station> getStationRoute() {
+        return stationRoute;
+    }
+
 }
